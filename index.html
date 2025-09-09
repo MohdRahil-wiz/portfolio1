@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="dekstop-nav">
+        <div class="logo">Mohd Rahil</div>
+        <div>
+            <ul class="navlinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamb">
+        <div class="logo">Mohd Rahil</div>
+        <div class="hamb-menu">
+            <div class="hamb-icon" onclick="togglemenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menulinks">
+                <li><a href="#about"  onclick="togglemenu()">About</a></li>
+                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+                <li><a href="#projets" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="sec__pic">
+            <img src="./assests/profile.hmg.png" alt="Mohd Rahil">
+        </div>
+        <div class="sec__text">
+            <p class="sec__text__p1">hello IM</p>
+            <h1 class="title">Mohd Rahil</h1>
+            <p class="sec__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <!-- <button class="btn btn-color2"onclick="window.open('./assests/resume-example.pdf')">download cv</button>                 -->
+                <button class="btn btn-color1"onclick="location.href='./#contact'">contact</button>                
+            </div>
+            <div id="social-cotainer">
+                <img src="./assests/github.png" alt="my github profile"
+                class="icon"
+                onclick="location.href='https://github.com/'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="sec__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="sec-container">
+            <div class="sec__pic">
+                <img src="./assests/img.about.png" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assests/experience.png" alt="experience icon" class="icon">
+                        <h3>freshers</h3>
+                        
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc (currently purusing)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, facilis. Illum numquam corporis quis soluta recusandae, natus voluptas beatae obcaecati repellendus pariatur, aliquam neque voluptate eum molestiae magni, aspernatur ad nesciunt nisi culpa impedit quam placeat praesentium vitae. Ratione voluptatum voluptates earum praesentium provident nostrum minus nemo inventore? Doloribus, aut?
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/image.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="sec__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Front-end Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">back-end Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>python</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>my sql</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experience" class="icon">
+                            <div>
+                                <h3>django</h3>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/image.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="sec__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assests/project-1.png" alt="project1" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">project one</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/'">
+                        github
+                    </button>
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/'">
+                        github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assests/project-2.png" alt="project2" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/'">
+                        github
+                    </button>
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/'">
+                        github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assests/project-3.png" alt="project3" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">project Three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/'">
+                        github
+                    </button>
+                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com/'">
+                        github
+                    </button>
+                </div>
+            </div>
+            </div>
+          </div> 
+        <img src="./assests/image.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="sec__text__p1">Get In Touch</p>
+        <h1 class="title">contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/email.png" alt="email icon" class="icon contact-icon">
+                <p><a href="rahilmohd1515@gamil.com">mail me</a></p>
+            </div>
+       
+            <div class="contact-info-container">
+                <img src="./assests/image copy.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/mohd-rahil-345877381">linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+             <ul class="navlinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+             </ul>
+            </div>
+        </nav>
+        <p>copyright &</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
